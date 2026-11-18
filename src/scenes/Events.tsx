@@ -230,9 +230,11 @@ function EventCard({ event }: { event: WeddingEvent }) {
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '.76rem', fontWeight: 500, color: '#6b1a2a', lineHeight: 1.2 }}>
             {formatDate(event.date)}
           </p>
-          <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '.55rem', letterSpacing: '.04em', color: '#9a6a1e' }}>
-            {event.time || 'TIME TO BE ANNOUNCED'}
-          </p>
+          {event.time && (
+            <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '.55rem', letterSpacing: '.04em', color: '#9a6a1e' }}>
+              {event.time}
+            </p>
+          )}
         </div>
       </div>
     </div>
