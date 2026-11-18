@@ -21,19 +21,18 @@ export default function Contact({ config }: ContactProps) {
       className="scene"
       aria-labelledby="contact-title"
       style={{
-        background: 'radial-gradient(ellipse at 50% 0%, rgba(232,196,122,.18), transparent 40%), #6b1a2a',
-        padding: '3.5rem 1.25rem',
+        background: '#f6f1e6',
+        padding: '2.35rem 1.25rem',
       }}
     >
-      <div style={{ maxWidth: '510px', margin: '0 auto', textAlign: 'center' }}>
-        <div style={{ width: '78px', height: '1px', margin: '0 auto 1rem', background: 'linear-gradient(90deg, transparent, #e8c47a, transparent)' }} />
-        <h2 id="contact-title" style={{ margin: 0, color: '#fff1bf', fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2rem, 7vw, 2.75rem)', fontWeight: 600 }}>
-          Connect With Us
+      <div style={{ maxWidth: '510px', margin: '0 auto' }}>
+        <h2 id="contact-title" style={{ margin: 0, color: '#6b1a2a', fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 6vw, 2.25rem)', fontWeight: 600, textAlign: 'center' }}>
+          Contact Information
         </h2>
-        <p style={{ margin: '.45rem auto 1.6rem', color: '#f8e8c5', fontFamily: "'Cormorant Garamond', serif", fontSize: '1.05rem', lineHeight: 1.5 }}>
-          For any assistance, please send us a WhatsApp message.
+        <p style={{ margin: '.3rem auto 1.35rem', color: '#70464e', fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', lineHeight: 1.5, textAlign: 'center' }}>
+          For any assistance, please contact us on WhatsApp.
         </p>
-        <div style={{ borderTop: '1px solid rgba(232,196,122,.58)', borderBottom: '1px solid rgba(232,196,122,.58)' }}>
+        <div style={{ borderTop: '1px solid #d7b568', borderBottom: '1px solid #d7b568' }}>
           {config.contacts.map((contact, index) => {
             const digits = contact.phone.replace(/\D/g, '');
             return (
@@ -44,24 +43,24 @@ export default function Contact({ config }: ContactProps) {
                 rel="noreferrer"
                 aria-label={`Message ${contact.name} on WhatsApp`}
                 style={{
-                  minHeight: '74px',
+                  minHeight: '62px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
                   gap: '1rem',
-                  padding: '1rem .25rem',
+                  padding: '.7rem .1rem',
                   textAlign: 'left',
                   textDecoration: 'none',
-                  color: '#fff7e8',
-                  borderBottom: index < config.contacts.length - 1 ? '1px solid rgba(232,196,122,.34)' : 'none',
+                  color: '#4a0f1c',
+                  borderBottom: index < config.contacts.length - 1 ? '1px solid #e5d4a7' : 'none',
                 }}
               >
                 <span>
-                  <strong style={{ display: 'block', fontFamily: "'Cormorant Garamond', serif", fontSize: '1.28rem', fontWeight: 600 }}>{contact.name}</strong>
-                  <span style={{ display: 'block', marginTop: '.13rem', color: '#edcf81', fontSize: '.86rem', letterSpacing: '.04em' }}>{contact.phone}</span>
+                  <strong style={{ display: 'block', fontFamily: "'Cormorant Garamond', serif", fontSize: '1.15rem', fontWeight: 600 }}>{contact.name}</strong>
+                  <span style={{ display: 'block', marginTop: '.08rem', color: '#70464e', fontSize: '.94rem', letterSpacing: '.015em' }}>{contact.phone}</span>
                 </span>
-                <span style={{ width: '42px', height: '42px', flex: '0 0 42px', display: 'grid', placeItems: 'center', color: '#6b1a2a', background: '#f6d77e', borderRadius: '50%', boxShadow: '0 4px 12px rgba(0,0,0,.2)' }}>
-                  <WhatsAppMark />
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '.35rem', color: '#8c6119', fontSize: '.78rem', fontWeight: 700, letterSpacing: '.045em', textTransform: 'uppercase' }}>
+                  <WhatsAppMark /> WhatsApp
                 </span>
               </a>
             );
