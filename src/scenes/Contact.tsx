@@ -30,7 +30,7 @@ export default function Contact({ config }: ContactProps) {
       style={{
         background: '#f6f1e6',
         width: '100%',
-        minHeight: 'auto',
+        minHeight: 0,
         height: 'auto',
         position: 'relative',
         overflow: 'hidden',

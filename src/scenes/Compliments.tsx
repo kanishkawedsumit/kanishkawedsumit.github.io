@@ -13,7 +13,7 @@ export default function Compliments({ config }: ComplimentsProps) {
   return (
     <section
       className="scene"
-      style={{ minHeight: 'auto', padding: 0, background: '#f6f1e6', position: 'relative' }}
+      style={{ minHeight: 0, padding: 0, background: '#f6f1e6', position: 'relative' }}
     >
       <div
         aria-hidden="true"
