@@ -20,9 +20,9 @@ export interface InviteConfig {
   quotes: string[];
   photos: string[];
   compliments: string[];
+  contacts: { name: string; phone: string }[];
   thingsToNote: string[];
   instagram: string;
   whatsappRsvp: string;
   music: string;
 }
-

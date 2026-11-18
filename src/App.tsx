@@ -11,6 +11,7 @@ import FamilyScroll from './scenes/FamilyScroll';
 import SaveDate from './scenes/SaveDate';
 import Gallery from './scenes/Gallery';
 import Events from './scenes/Events';
+import Contact from './scenes/Contact';
 import Compliments from './scenes/Compliments';
 import Notes from './scenes/Notes';
 import Follow from './scenes/Follow';
@@ -52,6 +53,7 @@ function App() {
           <SaveDate config={typedConfig} />
           <Gallery config={typedConfig} />
           <Events config={typedConfig} />
+          <Contact config={typedConfig} />
           <Compliments config={typedConfig} />
           <Notes config={typedConfig} />
           <Follow config={typedConfig} />

@@ -71,11 +71,16 @@
     "assets/gallery/formal-portrait.webp"
   ],
   "compliments": [
-    "Shri. Shyam Lal Goyal & Family (Tau-Tai)",
-    "Shri. Sunil Goyal & Family (Tau-Tai)",
+    "Shri. Shyam Lal Goyal & Family",
+    "Shri. Sunil Goyal & Family",
     "Brothers",
-    "Vikash Goyal, Naveen Goyal, Ashish Goyal, Ankur Goyal, Harsh Goyal",
-    "Special Invitation From Sanvi Rathee (Lado)"
+    "Vikas Goyal, Naveen Goyal, Ashish Goyal, Ankur Goyal, Harsh Goyal",
+    "Special Invitation From Saanvi Rathee (Lado)"
+  ],
+  "contacts": [
+    { "name": "Shyam Lal Goyal", "phone": "+91 92110 76811" },
+    { "name": "Sunil Goyal", "phone": "+91 93509 07585" },
+    { "name": "Harsh Goyal", "phone": "+91 92052 19234" }
   ],
   "thingsToNote": [
     "Your presence is the greatest gift we could ask for.",
