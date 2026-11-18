@@ -28,7 +28,7 @@ export default function Compliments({ config }: ComplimentsProps) {
         }}
       />
       <div style={{ padding: '.7rem 1.25rem .5rem' }}>
-        <InvitationScroll title="With Best Compliments From:" lines={config.compliments} />
+        <InvitationScroll title="With Best Compliments From:" lines={config.compliments} variant="compact" />
       </div>
     </section>
   );
