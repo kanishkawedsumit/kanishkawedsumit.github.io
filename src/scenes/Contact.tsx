@@ -26,11 +26,14 @@ export default function Contact({ config }: ContactProps) {
 
   return (
     <section
-      className="scene"
       aria-labelledby="contact-title"
       style={{
         background: '#f6f1e6',
+        width: '100%',
         minHeight: 'auto',
+        height: 'auto',
+        position: 'relative',
+        overflow: 'hidden',
         padding: '2.35rem 1.25rem',
       }}
     >
