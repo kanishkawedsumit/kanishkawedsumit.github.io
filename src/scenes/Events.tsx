@@ -226,8 +226,8 @@ function EventCard({ event }: { event: WeddingEvent }) {
             </span>
           </a>
         </div>
-        <div style={{ marginTop: '.72rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '.76rem', fontWeight: 500, color: '#6b1a2a', lineHeight: 1.2 }}>
+        <div style={{ marginTop: '.72rem', display: 'flex', justifyContent: event.time ? 'space-between' : 'center', alignItems: 'center' }}>
+          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '.76rem', fontWeight: 500, color: '#6b1a2a', lineHeight: 1.2, textAlign: event.time ? 'left' : 'center' }}>
             {formatDate(event.date)}
           </p>
           {event.time && (
