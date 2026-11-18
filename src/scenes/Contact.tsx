@@ -30,6 +30,7 @@ export default function Contact({ config }: ContactProps) {
       aria-labelledby="contact-title"
       style={{
         background: '#f6f1e6',
+        minHeight: 'auto',
         padding: '2.35rem 1.25rem',
       }}
     >
